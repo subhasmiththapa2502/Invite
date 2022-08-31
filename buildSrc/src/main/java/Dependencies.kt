@@ -19,6 +19,9 @@ object Versions {
     const val extension = "1.1.0"
     const val lottie = "5.2.0"
 
+    //Compose
+    const val composeVersion ="1.3.0-alpha01"
+
     //UI
     const val constraintlayout = "2.0.4"
     const val appcompat = "1.2.0"
@@ -91,6 +94,22 @@ object Deps {
     const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val extension = "android.arch.lifecycle:extensions:${Versions.extension}"
+
+
+    // compose
+    const val composeui = "androidx.compose.ui:ui:${Versions.composeVersion}"
+    const val activitycompose = "androidx.activity:activity-compose:${Versions.composeVersion}"
+    const val composematerial = "androidx.compose.material:material:${Versions.composeVersion}"
+    const val materialicons = "androidx.compose.material:material-icons-extended:${Versions.composeVersion}"
+    const val composefoundation = "androidx.compose.foundation:foundation:${Versions.composeVersion}"
+    const val composefoundationlayout = "androidx.compose.foundation:foundation-layout:${Versions.composeVersion}"
+    const val composeanimation = "androidx.compose.animation:animation:${Versions.composeVersion}"
+    const val composeruntime = "androidx.compose.runtime:runtime:${Versions.composeVersion}"
+    const val composeruntimelivedata = "androidx.compose.runtime:runtime-livedata:${Versions.composeVersion}"
+    const val navigationcompose = "androidx.navigation:navigation-compose:${Versions.composeVersion}"
+    const val composetooling = "androidx.compose.ui:ui-tooling:${Versions.composeVersion}"
+    const val constraintlayoutcompose = "androidx.constraintlayout:constraintlayout-compose:${Versions.composeVersion}"
+    const val composeuitesting = "androidx.compose.ui:ui-test-junit4:${Versions.composeVersion}"
 
 
     //Timber
