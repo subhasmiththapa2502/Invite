@@ -75,7 +75,6 @@ dependencies {
     implementation Deps.extension
 
     implementation Deps.composeui
-    implementation Deps.composeui
     implementation Deps.activitycompose
     implementation Deps.composematerial
     implementation Deps.materialicons

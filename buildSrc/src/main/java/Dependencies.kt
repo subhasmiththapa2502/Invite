@@ -41,8 +41,8 @@ object Versions {
 
 object AppMetaData {
     const val id = "com.app.invite"
-    const val compileSdkVersion = 29
-    const val targetSdkVersion = 29
+    const val compileSdkVersion = 32
+    const val targetSdkVersion = 32
     const val minSdkVersion = 21
     const val buildToolsVersion = "30.0.3"
     const val versionCode = 1
@@ -61,9 +61,9 @@ object Deps {
     const val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
     const val swiperefresh =
         "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipelayout}"
-    const val navigationFragment =
-        "android.arch.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationFragment = "android.arch.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
+    //const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
 
