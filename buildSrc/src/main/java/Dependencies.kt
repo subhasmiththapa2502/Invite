@@ -17,6 +17,7 @@ object Versions {
     const val retrofitCoroutines = "0.9.2"
     const val multidex = "2.0.1"
     const val extension = "1.1.0"
+    const val lottie = "5.2.0"
 
     //UI
     const val constraintlayout = "2.0.4"
@@ -61,6 +62,8 @@ object Deps {
         "android.arch.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
+    const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
+
 
     //Hilt
     const val hilt_core = "com.google.dagger:hilt-android:${Versions.hilt}"

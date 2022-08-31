@@ -55,6 +55,8 @@ dependencies {
     implementation Deps.legacySupport
     implementation Deps.glide
     annotationProcessor Deps.glide
+    implementation Deps.lottie
+
     implementation Deps.hilt_core
     kapt Deps.hilt_compiler
     implementation Deps.retrofit
