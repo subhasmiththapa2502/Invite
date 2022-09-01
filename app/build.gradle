@@ -20,6 +20,11 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    android {
+        buildFeatures {
+            viewBinding true
+        }
+    }
 
     buildTypes {
         release {
@@ -73,6 +78,9 @@ dependencies {
     implementation Deps.timber
     implementation Deps.espressoIdlingResource
     implementation Deps.extension
+    implementation Deps.retroMock
+    implementation Deps.gson
+    implementation Deps.qrcode
 
 
     testImplementation Deps.jUnit
