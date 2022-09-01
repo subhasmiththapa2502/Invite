@@ -19,6 +19,9 @@ object Versions {
     const val extension = "1.1.0"
     const val lottie = "5.2.0"
 
+    const val retroMock = "1.1.1"
+    const val qrcode = "3.2.1"
+
 
     //UI
     const val constraintlayout = "2.0.4"
@@ -70,12 +73,19 @@ object Deps {
     const val hilt_core = "com.google.dagger:hilt-android:${Versions.hilt}"
     const val hilt_compiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 
+    //RetroMock
+    const val retroMock = "co.infinum:retromock:${Versions.retroMock}"
+
+
     //Networking
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitCoroutines =
         "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:${Versions.retrofitCoroutines}"
     const val retrofitMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.converterMoshi}"
     const val okhttpInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+    const val gson = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+
+    const val qrcode = "com.google.zxing:core:${Versions.qrcode}"
 
     // Moshi
     const val moshi = "com.squareup.moshi:moshi:${Versions.moshi}"
