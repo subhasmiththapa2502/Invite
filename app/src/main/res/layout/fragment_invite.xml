@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/lblmembers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_current_members"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_current_members_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/lblmembers"
+        app:layout_constraintStart_toEndOf="@id/lblmembers"
+        app:layout_constraintTop_toTopOf="@id/lblmembers" />
+
+    <TextView
+        android:id="@+id/tv_members_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/label_limit"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_members_limit_val"
+        app:layout_constraintTop_toTopOf="@id/lblmembers" />
+
+
+    <TextView
+        android:id="@+id/tv_members_limit_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_members_limit"
+        app:layout_constraintEnd_toEndOf="@id/s_invite_permissions"
+        app:layout_constraintTop_toTopOf="@id/tv_members_limit" />
+
+    <TextView
+        android:id="@+id/tv_current_supporters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/label_current_supporters"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/lblmembers"
+        app:layout_constraintTop_toBottomOf="@id/lblmembers" />
+
+    <TextView
+        android:id="@+id/tv_current_supporters_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_current_supporters"
+        app:layout_constraintStart_toEndOf="@id/tv_current_supporters"
+        app:layout_constraintTop_toTopOf="@id/tv_current_supporters" />
+
+    <TextView
+        android:id="@+id/tv_supporters_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/label_limit"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_supporters_limit_val"
+        app:layout_constraintTop_toTopOf="@id/tv_current_supporters_val" />
+
+
+    <TextView
+        android:id="@+id/tv_supporters_limit_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_supporters_limit"
+        app:layout_constraintEnd_toEndOf="@id/s_invite_permissions"
+        app:layout_constraintTop_toTopOf="@id/tv_supporters_limit" />
+
+    <TextView
+        android:id="@+id/tv_invite_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/label_invite_permissions"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/lblmembers"
+        app:layout_constraintTop_toBottomOf="@id/tv_current_supporters" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_supporters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_current_supporters, tv_current_supporters_val,
+         tv_supporters_limit, tv_supporters_limit_val" />
+
+    <Spinner
+        android:id="@+id/s_invite_permissions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_invite_permissions" />
+
+    <TextView
+        android:id="@+id/tv_invite_url_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="@string/label_invite_url_guide"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/s_invite_permissions"
+        app:layout_constraintStart_toStartOf="@id/s_invite_permissions"
+        app:layout_constraintTop_toBottomOf="@id/s_invite_permissions" />
+
+    <TextView
+        android:id="@+id/tv_what_are_permissions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/label_what_are_permissions"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_invite_url_desc"
+        app:layout_constraintStart_toStartOf="@id/tv_invite_url_desc"
+        app:layout_constraintTop_toBottomOf="@id/tv_invite_url_desc" />
+
+    <Button
+        android:id="@+id/b_share_qr"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/label_share_qr_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_what_are_permissions"
+        app:layout_constraintStart_toStartOf="@id/tv_what_are_permissions"
+        app:layout_constraintTop_toBottomOf="@id/tv_what_are_permissions" />
+
+    <Button
+        android:id="@+id/b_copy_link"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="6dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/label_copy_link"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/b_share_qr"
+        app:layout_constraintStart_toStartOf="@id/b_share_qr"
+        app:layout_constraintTop_toBottomOf="@id/b_share_qr" />
+
+
+    <FrameLayout
+        android:id="@+id/fl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:visibility="gone">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:adjustViewBounds="true"
+            app:lottie_fileName="load.json"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:lottie_loop="true"
+            app:lottie_speed="1"
+            app:lottie_autoPlay="true"
+            tools:ignore="ContentDescription"/>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
