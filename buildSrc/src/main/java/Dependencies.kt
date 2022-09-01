@@ -1,7 +1,7 @@
 object Versions {
     //Core
-    const val kotlin = "1.4.21"
-    const val hilt = "2.39.1"
+    const val kotlin = "1.7.0"
+    const val hilt = "2.42"
     const val hiltPlugin = "2.43.2"
     const val navigation = "2.3.2"
     const val retrofit = "2.9.0"
@@ -19,8 +19,6 @@ object Versions {
     const val extension = "1.1.0"
     const val lottie = "5.2.0"
 
-    //Compose
-    const val composeVersion ="1.3.0-alpha01"
 
     //UI
     const val constraintlayout = "2.0.4"
@@ -61,8 +59,8 @@ object Deps {
     const val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
     const val swiperefresh =
         "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipelayout}"
-    const val navigationFragment = "android.arch.navigation:navigation-fragment-ktx:${Versions.navigation}"
-    const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
+    const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     //const val navigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val glide = "com.github.bumptech.glide:glide:${Versions.glide}"
     const val lottie = "com.airbnb.android:lottie:${Versions.lottie}"
@@ -95,21 +93,6 @@ object Deps {
     const val viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val extension = "android.arch.lifecycle:extensions:${Versions.extension}"
 
-
-    // compose
-    const val composeui = "androidx.compose.ui:ui:${Versions.composeVersion}"
-    const val activitycompose = "androidx.activity:activity-compose:${Versions.composeVersion}"
-    const val composematerial = "androidx.compose.material:material:${Versions.composeVersion}"
-    const val materialicons = "androidx.compose.material:material-icons-extended:${Versions.composeVersion}"
-    const val composefoundation = "androidx.compose.foundation:foundation:${Versions.composeVersion}"
-    const val composefoundationlayout = "androidx.compose.foundation:foundation-layout:${Versions.composeVersion}"
-    const val composeanimation = "androidx.compose.animation:animation:${Versions.composeVersion}"
-    const val composeruntime = "androidx.compose.runtime:runtime:${Versions.composeVersion}"
-    const val composeruntimelivedata = "androidx.compose.runtime:runtime-livedata:${Versions.composeVersion}"
-    const val navigationcompose = "androidx.navigation:navigation-compose:${Versions.composeVersion}"
-    const val composetooling = "androidx.compose.ui:ui-tooling:${Versions.composeVersion}"
-    const val constraintlayoutcompose = "androidx.constraintlayout:constraintlayout-compose:${Versions.composeVersion}"
-    const val composeuitesting = "androidx.compose.ui:ui-test-junit4:${Versions.composeVersion}"
 
 
     //Timber

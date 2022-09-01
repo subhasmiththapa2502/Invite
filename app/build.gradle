@@ -74,20 +74,6 @@ dependencies {
     implementation Deps.espressoIdlingResource
     implementation Deps.extension
 
-    implementation Deps.composeui
-    implementation Deps.activitycompose
-    implementation Deps.composematerial
-    implementation Deps.materialicons
-    implementation Deps.composefoundation
-    implementation Deps.composefoundationlayout
-    implementation Deps.composeanimation
-    implementation Deps.composeruntime
-    implementation Deps.composeruntimelivedata
-    implementation Deps.navigationcompose
-    implementation Deps.composetooling
-    implementation Deps.constraintlayoutcompose
-    implementation Deps.composeuitesting
-
 
     testImplementation Deps.jUnit
     testImplementation Deps.mockitoKotlin
