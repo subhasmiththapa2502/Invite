@@ -4,9 +4,6 @@ import okhttp3.Interceptor
 import okhttp3.Response
 import timber.log.Timber
 
-/**
- * This [HttpRequestInterceptor] intercept all request and print the request URL using [Timber]
- */
 class HttpRequestInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
         val originalRequest = chain.request()
